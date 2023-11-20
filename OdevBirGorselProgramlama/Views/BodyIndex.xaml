@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OdevBirGorselProgramlama.Views.BodyIndex"
+             Title="Vücud İndeks Hesaplama"
+             BackgroundColor= "#00b2ee">
+    <VerticalStackLayout>
+        <Label Text="İndeks Hesapla" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Title"  Margin="10"/>
+
+        <Slider x:Name="weightSlider" Minimum="1" Maximum="150" Value="70" MaximumTrackColor="Black"  MinimumTrackColor="Tan" ThumbColor="Tan" Margin="5"/>
+        <Label Text="Kilo: " Margin="5" />
+        <Label x:Name="weightLabel" Text="70 kg" Margin="5" />
+
+        <Slider x:Name="heightSlider" Minimum="1" Maximum="220" Value="170" MaximumTrackColor="Black"  MinimumTrackColor="Tan" ThumbColor="Tan" Margin="5"/>
+        <Label Text="Boy: " Margin="5"/>
+        <Label x:Name="heightLabel" Text="170 cm" Margin="5"/>
+
+        <Button Text="Hesapla" Clicked="hesaplaClick" BackgroundColor="Orange" BorderColor="Yellow" BorderWidth="2" Margin="10" />
+
+        <Label x:Name="resultLabel" Text="" FontSize="Large" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="10"/>
+       
+    </VerticalStackLayout>
+</ContentPage>

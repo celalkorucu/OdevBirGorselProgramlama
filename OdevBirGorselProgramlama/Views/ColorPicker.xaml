@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OdevBirGorselProgramlama.Views.ColorPicker"
+             Title="Renk Oluşturma"
+             BackgroundColor= "#00b2ee">
+    <VerticalStackLayout>
+        <Label Text="Renk Oluştur" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Title" />
+
+        <Slider x:Name="redSlider" Minimum="0" Maximum="255" Value="128" MaximumTrackColor="Black" MinimumTrackColor="Red" ThumbColor="Red" />
+        <Label Text="Kırmızı: " />
+        <Label x:Name="redLabel" Text="128" />
+
+        <Slider x:Name="greenSlider" Minimum="0" Maximum="255" Value="128" MaximumTrackColor="Black" MinimumTrackColor="Green" ThumbColor="Green"/>
+        <Label Text="Yeşil: " />
+        <Label x:Name="greenLabel" Text="128" />
+
+        <Slider x:Name="blueSlider" Minimum="0" Maximum="255" Value="128" MaximumTrackColor="Black" MinimumTrackColor="Blue" ThumbColor="Blue" />
+        <Label Text="Mavi: " />
+        <Label x:Name="blueLabel" Text="128" />
+
+        <BoxView x:Name="colorPreview" HeightRequest="200" HorizontalOptions="FillAndExpand" CornerRadius="20" Margin="5"/>
+
+        <Label x:Name="hexLabel" Text="Hex Code: #808080" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+
+        <Button x:Name="randomColorButton" Text="Rasgele renk oluştur" Clicked="rasgeleRenkClick" BackgroundColor="Orange" BorderColor="Yellow" BorderWidth="2" Margin="10"/>
+        <Button x:Name="copyHexButton" Text="Hex kodunu kopyala" Clicked="kopyalaHexKodClick" BackgroundColor="Orange" BorderWidth="2" BorderColor="Yellow" Margin="10"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor= "#00b2ee"
+             x:Class="OdevBirGorselProgramlama.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+
+            <Image Source="Resources/Images/image.jpg"
+                   WidthRequest="200"
+                   HeightRequest="200"
+                   Aspect="AspectFill" />
+
+            <Label Text="Celal Korucu" HorizontalOptions="CenterAndExpand"
+                   FontSize="30"
+                   TextColor="Gray" />
+
+            <Label Text="Bartın Üniversitesi Bilgisayar Mühendisliği"
+                   HorizontalOptions="Center"
+                   FontSize="25"
+                   TextColor="Gray" />
+
+            <Label Text="Ödev-1" HorizontalOptions="CenterAndExpand"
+                   FontSize="45"
+                   TextColor="Gray" />
+
+
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
