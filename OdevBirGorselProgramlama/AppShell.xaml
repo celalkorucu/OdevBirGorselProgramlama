@@ -4,11 +4,31 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:OdevBirGorselProgramlama"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:local1="clr-namespace:OdevBirGorselProgramlama.Views"
+    Shell.FlyoutBehavior="Flyout">
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
+    <ShellContent
+        Title="BodyIndex"
+        ContentTemplate="{DataTemplate local1:BodyIndex}"
+        Route="BodyIndex" />
+
+    <ShellContent
+        Title="ColorPicker"
+        ContentTemplate="{DataTemplate local1:ColorPicker}"
+        Route="ColorPicker" />
+
+    <ShellContent
+        Title="Loan"
+        ContentTemplate="{DataTemplate local1:Loan}"
+        Route="Loan" />
+
+    <ShellContent
+        Title="Todo"
+        ContentTemplate="{DataTemplate local1:Todo}"
+        Route="Todo" />
 </Shell>
